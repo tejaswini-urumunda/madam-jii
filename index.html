@@ -1,0 +1,513 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>For My Madam Jiii ❤️</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(135deg, #ffe0ed, #fff4f8, #f7e5ff);
+  color: #743653;
+  padding: 25px 14px 40px;
+  overflow-x: hidden;
+}
+
+.container {
+  width: 100%;
+  max-width: 650px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.93);
+  border: 1px solid white;
+  border-radius: 26px;
+  padding: 30px 23px;
+  text-align: center;
+  box-shadow: 0 12px 40px #c66a9220;
+  animation: appear 0.8s ease;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.heart {
+  font-size: 65px;
+  animation: beat 1.3s infinite;
+}
+
+.eyebrow {
+  color: #d14f88;
+  font-size: 11px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  margin: 18px 0 12px;
+}
+
+h1 {
+  color: #b52f69;
+  font-family: Georgia, serif;
+  font-size: clamp(27px, 6vw, 38px);
+  line-height: 1.35;
+  margin-bottom: 16px;
+}
+
+h2 {
+  color: #bd3975;
+  font-family: Georgia, serif;
+  font-size: 23px;
+  line-height: 1.5;
+  margin: 15px 0;
+}
+
+p {
+  line-height: 1.9;
+  margin: 15px 0;
+}
+
+.telugu {
+  color: #b83e76;
+}
+
+button {
+  background: linear-gradient(135deg, #ed79a7, #d84183);
+  border: none;
+  border-radius: 30px;
+  padding: 14px 23px;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 18px;
+  box-shadow: 0 6px 18px #d8418330;
+  transition: transform 0.2s;
+}
+
+button:hover {
+  transform: translateY(-3px);
+}
+
+.hint {
+  color: #b18a9e;
+  font-size: 12px;
+  margin-top: 20px;
+}
+
+/* Madam's photo */
+.photo-frame {
+  width: min(260px, 100%);
+  margin: 22px auto;
+  padding: 9px;
+  background: linear-gradient(135deg, #ffb5d0, #f7dafa, #ffd6e5);
+  border-radius: 24px;
+  box-shadow: 0 8px 25px #d65a8b25;
+  transform: rotate(-2deg);
+}
+
+.photo-frame img {
+  display: block;
+  width: 100%;
+  max-height: 360px;
+  object-fit: contain;
+  border-radius: 17px;
+  background: #fff0f6;
+}
+
+.photo-caption {
+  font-family: Georgia, serif;
+  font-style: italic;
+  color: #bc4d7d;
+}
+
+/* Love letter */
+.message {
+  text-align: left;
+  margin-top: 25px;
+}
+
+.message p {
+  margin: 20px 0;
+  font-size: 15px;
+}
+
+.highlight {
+  text-align: center;
+  padding: 20px;
+  background: #fff0f6;
+  border-radius: 18px;
+  color: #a52d65;
+}
+
+.signature {
+  border-top: 1px solid #f1d0df;
+  padding-top: 20px;
+  margin-top: 25px;
+  text-align: center;
+}
+
+.signature strong {
+  color: #c23c78;
+  font-family: Georgia, serif;
+}
+
+/* Final surprise */
+.surprise-box {
+  margin-top: 30px;
+  padding: 23px 16px;
+  border: 1px dashed #e79abc;
+  border-radius: 22px;
+  background: #fff6fa;
+}
+
+.last-words {
+  background: #ffe7f0;
+  padding: 18px;
+  border-radius: 16px;
+  color: #a42c65;
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  padding: 25px 0 0;
+  color: #b77795;
+  font-size: 12px;
+}
+
+/* Floating hearts */
+#hearts {
+  position: fixed;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.float-heart {
+  position: absolute;
+  bottom: -45px;
+  animation: floatUp 6s linear forwards;
+}
+
+@keyframes beat {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.12); }
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes floatUp {
+  0% {
+    transform: translateY(0) rotate(0);
+    opacity: 0;
+  }
+  15% { opacity: 0.85; }
+  85% { opacity: 0.8; }
+  100% {
+    transform: translateY(-110vh) rotate(35deg);
+    opacity: 0;
+  }
+}
+
+@media (max-width: 420px) {
+  .card { padding: 25px 17px; }
+  .message p { font-size: 14px; }
+}
+</style>
+</head>
+
+<body>
+
+<div id="hearts"></div>
+
+<main class="container">
+
+  <!-- WELCOME SCREEN -->
+  <section class="card" id="welcome">
+
+    <div class="heart">💗</div>
+
+    <p class="eyebrow">A LITTLE SURPRISE FOR YOU</p>
+
+    <h1>For My Madam Jiii 🥹❤️</h1>
+
+    <p>
+      There is something special I have been
+      wanting to tell you, mam...
+    </p>
+
+    <p class="telugu">
+      Mee kosam naa heart nunchi oka chinna
+      surprise, Madam jiii! 💌
+    </p>
+
+    <button id="openBtn">Open My Heart 💌</button>
+
+    <p class="hint">Made with lots of love, just for you.</p>
+
+  </section>
+
+
+  <!-- LOVE LETTER SCREEN -->
+  <section class="card hidden" id="letter">
+
+    <div class="heart">💖</div>
+
+    <p class="eyebrow">FROM MY HEART TO YOURS</p>
+
+    <h1>Dear Madam Jiii ❤️</h1>
+
+    <!-- PHOTO: Keep photo.jpg in the same folder as index.html -->
+    <div class="photo-frame">
+      <img
+        src="photo.jpg"
+        alt="A special photo of Madam Jiii"
+        onerror="this.style.display='none'; document.getElementById('photoNote').classList.remove('hidden');"
+      >
+      <p id="photoNote" class="hidden">
+        📸 Add Madam's photo as photo.jpg in this folder.
+      </p>
+    </div>
+
+    <p class="photo-caption">
+      A little picture of someone very special to me 🌷
+    </p>
+
+    <div class="message">
+
+      <p>
+        Mam jiii ❤️🥹 I want to tell you something
+        from my heart...
+      </p>
+
+      <p>
+        Mam, first mimalni chusinappudu, I thought
+        meeru rude emo ani... 😅
+        First lo meeru anthaga personally naaku nachhe
+        vaallu kaadhu andi.
+        Sorry mam, it's my genuine feeling. 🥹
+      </p>
+
+      <p>
+        But as the days passed, meetho koncham koncham
+        maatladuthu unna, my thoughts and feelings about
+        you slowly started changing.
+      </p>
+
+      <p>
+        And then suddenly, I realised that I started
+        admiring you, respecting you, and liking you so
+        much, mam. 💗
+        I don't even know exactly when that change happened,
+        but now you have become someone really special to me.
+      </p>
+
+      <p>
+        I am really, really lucky to have you in my life,
+        mam. 🥹💕
+        Maybe you don't know how special you are to me,
+        but the happiness I feel when I talk to you
+        is something I can't explain in words.
+      </p>
+
+      <p>
+        Mam, please ilage naa life lo undipondi.
+        Please just stay with me like this, mam.
+        I don't want this beautiful bond to change. ❤️🫶
+      </p>
+
+      <p>
+        And mam, I'm going to miss you badly...
+        chalaa, chalaa miss avuthanu andi. 🥺💔
+        Just thinking about not seeing you or talking
+        to you like before makes me emotional.
+      </p>
+
+      <p>
+        You are someone I admire, respect, and care
+        about so much. I'll always be grateful that
+        I got to know you, Madam jiii. 🌷
+      </p>
+
+      <p class="highlight">
+        One thing I'll always want you to remember... 💖
+        <br><br>
+        You are very special to me, Madam jiii.
+        <br><br>
+        No matter how much time passes, the respect,
+        admiration, and affection I have for you will
+        always have a special place in my heart. 🥹❤️
+      </p>
+
+      <p class="telugu">
+        Meeru eppudu happy ga undali mam.
+        Mee smile eppudu alage undali.
+        Please ilage undandi, Madam jiii...
+        I am always going to miss you badly. ❤️🫂
+      </p>
+
+    </div>
+
+    <div class="signature">
+      <p>With lots of love and respect,</p>
+      <strong>Your student, who will miss you so much 💌</strong>
+    </div>
+
+
+    <!-- FINAL SURPRISE -->
+    <div class="surprise-box">
+
+      <div class="heart">💝</div>
+
+      <h2>One Last Thing, Madam Jiii...</h2>
+
+      <p>
+        Before you leave this little page,
+        there is one last message for you. 🥹
+      </p>
+
+      <button id="surpriseBtn">One Last Message 💌</button>
+
+      <div id="surpriseMessage" class="hidden">
+
+        <div class="heart">❤️</div>
+
+        <h2>Thank You for Coming Into My Life, Mam!</h2>
+
+        <p>
+          Nenu mimalni first chusinappudu ila feel avuthanu
+          ani assalu anukoledu, mam.
+          But now, meeru naaku chala special ayipoyaru. 🥹
+        </p>
+
+        <p>
+          Mee tho inka chala memories create cheskovalani
+          undhi. Mee tho maatladina little moments kuda
+          naaku chala precious, mam. 💗
+        </p>
+
+        <p>
+          Future lo em jarigina, meeru naaku nerpinchina
+          vishayalu, mee meedha naaku unna respect,
+          admiration, affection anni naa heart lo untayi.
+        </p>
+
+        <p>
+          Nenu mimalni chala miss avuthanu,
+          Madam jiii... Chalaa ante chalaa. 🥺🫂
+        </p>
+
+        <div class="last-words">
+          <strong>Ur always mine, Madam jiii... 💖</strong>
+          <br><br>
+          Always special. Always respected.
+          Always remembered. ❤️
+          <br><br>
+          With lots and lots of love,
+          <br>
+          <strong>Your student, who will miss you so much 💌</strong>
+        </div>
+
+        <p>💗 💖 💕 💝 💗</p>
+
+      </div>
+    </div>
+
+    <button id="backBtn">Read My Letter Again 💕</button>
+
+  </section>
+
+</main>
+
+<footer>Made with ❤️, just for you, Madam jiii.</footer>
+
+<script>
+const welcome = document.getElementById("welcome");
+const letter = document.getElementById("letter");
+const openBtn = document.getElementById("openBtn");
+const surpriseBtn = document.getElementById("surpriseBtn");
+const surpriseMessage = document.getElementById("surpriseMessage");
+const backBtn = document.getElementById("backBtn");
+const hearts = document.getElementById("hearts");
+
+function createHeart() {
+  const heart = document.createElement("span");
+  heart.className = "float-heart";
+
+  const symbols = ["💗", "💕", "💖", "💘", "♡"];
+  heart.textContent =
+    symbols[Math.floor(Math.random() * symbols.length)];
+
+  heart.style.left = Math.random() * 100 + "vw";
+  heart.style.fontSize = (16 + Math.random() * 22) + "px";
+  heart.style.animationDuration = (4 + Math.random() * 4) + "s";
+
+  hearts.appendChild(heart);
+
+  heart.addEventListener("animationend", () => heart.remove());
+}
+
+function heartBurst(amount) {
+  for (let i = 0; i < amount; i++) {
+    setTimeout(createHeart, i * 100);
+  }
+}
+
+openBtn.addEventListener("click", () => {
+  welcome.classList.add("hidden");
+  letter.classList.remove("hidden");
+
+  window.scrollTo({ top: 0, behavior: "smooth" });
+  heartBurst(25);
+});
+
+surpriseBtn.addEventListener("click", () => {
+  surpriseMessage.classList.remove("hidden");
+  surpriseBtn.classList.add("hidden");
+
+  heartBurst(35);
+
+  setTimeout(() => {
+    surpriseMessage.scrollIntoView({
+      behavior: "smooth",
+      block: "center"
+    });
+  }, 150);
+});
+
+backBtn.addEventListener("click", () => {
+  surpriseMessage.classList.add("hidden");
+  surpriseBtn.classList.remove("hidden");
+
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});
+
+setInterval(createHeart, 900);
+</script>
+
+</body>
+</html>
